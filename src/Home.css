@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+.home {
+  color: #020000;
+  padding: 30px 70px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+}
+.logo span {
+  color: #c600f2;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar li {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.navbar li:hover{
+  opacity: 1;
+  border-bottom: 2px solid #c600f2;
+}
+
+.contact-btn {
+  background: #c600f2;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.role {
+  color: #323232;
+  margin-bottom: 10px;
+}
+
+.hero-left h1 {
+  font-size: 56px;
+  line-height: 1.2;
+}
+
+.hero-left h1 span {
+  color: #c600f2;
+}
+
+.desc {
+  margin: 25px 0;
+  color: #323232;
+  max-width: 500px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cv-btn {
+  background: #c600f2;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.socials span {
+  border: 1px solid #c600f2;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Profile Circle */
+.hero-right .circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 3px dashed #c600f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  flex-shrink:0;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 40px;
+  color: #c600f2;
+}
+
+.stats p {
+  color: #323232;
+}
+
+/* Experience Section */
+.experience {
+  padding: 80px 10%;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.experience-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  background: #c600f2;
+  border-radius: 50%;
+}
+
+.duration {
+  font-size: 14px;
+  color: #c600f2;
+  font-weight: 600;
+}
+
+.experience-card h3 {
+  font-size: 22px;
+  margin: 10px 0 5px;
+}
+
+.experience-card h4 {
+  font-size: 16px;
+  color: #323232;
+  margin-bottom: 15px;
+}
+
+.experience-card p {
+  color: #323232;
+  line-height: 1.6;
+}
