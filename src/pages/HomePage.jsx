@@ -43,7 +43,7 @@ export default function HomePage() {
           <div className="hero-right">
             <div className="circle">
               <img
-                //src="https://i.imgur.com/8Km9tLL.jpg"
+                //src=".jpg"
                 alt="profile"
               />
             </div>
@@ -61,10 +61,65 @@ export default function HomePage() {
 
       {/* Experience Section */}
       <section className="experience">
+        {/* About Me Section */}
+        <section className="about">
+          <h2 className="section-title">About Me</h2>
+
+          <div className="about-content">
+
+            {/* Image - slide from left */}
+            <motion.div
+              className="about-image"
+              initial={{ opacity: 0, x: -80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <img
+                //src=".jpg"
+                alt="About me"
+              />
+            </motion.div>
+
+            {/* Text - slide from right */}
+            <motion.div
+              className="about-text"
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <p>
+                I am a passionate frontend developer with a strong interest in creating
+                clean, user-friendly, and responsive web applications. I enjoy turning
+                complex problems into simple and elegant solutions.
+              </p>
+
+              <p>
+                I have hands-on experience working with modern web technologies such as
+                React, JavaScript, HTML, and CSS, and I am continuously learning to improve
+                my skills and stay updated with industry trends.
+              </p>
+            </motion.div>
+
+          </div>
+        </section>
+      </section>
+
+
+
+      {/* Experience Section */}
+      <section className="experience">
         <h2 className="section-title">Experience</h2>
 
         <div className="experience-list">
-          <div className="experience-card">
+          <motion.div
+            className="experience-card"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             <span className="duration">2024 – Present</span>
             <h3>Frontend Developer</h3>
             <h4>Freelance / Personal Projects</h4>
@@ -73,9 +128,15 @@ export default function HomePage() {
               React, HTML, CSS, and JavaScript. Focused on clean UI,
               reusable components, and performance optimization.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="experience-card">
+          <motion.div
+            className="experience-card"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
             <span className="duration">2023 – 2024</span>
             <h3>Web Development Student</h3>
             <h4>Academic & Self-Learning</h4>
@@ -84,10 +145,11 @@ export default function HomePage() {
               management systems. Gained hands-on experience with
               Git, GitHub, and modern frontend workflows.
             </p>
-          </div>
+          </motion.div>
+
         </div>
       </section>
-      <Test />
+      {/*<Test />*/}
     </>
   );
 };
