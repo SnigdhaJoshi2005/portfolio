@@ -1,9 +1,7 @@
-import React from "react";
-import "../Services.css";
 import Navbar from "../components/Navbar.jsx";
 import { FaCode, FaPaintBrush, FaMobileAlt, FaServer } from "react-icons/fa";
 
-const Services = () => {
+export default function ServicesPage() {
   return (
     <div className="services-page">
       <Navbar />
@@ -56,5 +54,3 @@ const Services = () => {
     </div>
   );
 };
-
-export default Services;

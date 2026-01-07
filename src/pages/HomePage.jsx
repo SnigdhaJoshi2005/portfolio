@@ -1,10 +1,8 @@
-import React from "react";
-import "../Home.css";
 import Navbar from "../components/Navbar.jsx";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
-const Home = () => {
+export default function HomePage() {
   return (
     <>
       <div className="home">
@@ -38,7 +36,7 @@ const Home = () => {
           <div className="hero-right">
             <div className="circle">
               <img
-                src="https://i.imgur.com/8Km9tLL.jpg"
+                //src="https://i.imgur.com/8Km9tLL.jpg"
                 alt="profile"
               />
             </div>
@@ -85,5 +83,3 @@ const Home = () => {
     </>
   );
 };
-
-export default Home;
