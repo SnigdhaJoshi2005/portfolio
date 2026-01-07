@@ -1,22 +1,29 @@
 import Navbar from "../components/Navbar.jsx";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import Test from "./test.jsx";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
     <>
       <div className="home">
         {/* Navbar */}
-        <Navbar/>
+        <Navbar />
 
         {/* Hero Section */}
         <div className="hero">
           <div className="hero-left">
             <p className="role">Occupation</p>
-            <h1>
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+            >
               Hello I’m <br />
               <span>First and Last Name</span>
-            </h1>
+            </motion.h1>
+
             <p className="desc">
               I excel at crafting elegant digital experiences and
               I am proficient in various programming languages
@@ -26,9 +33,9 @@ export default function HomePage() {
             <div className="actions">
               <button className="cv-btn">Download CV</button>
               <div className="socials">
-                <span><a href="https://www.youtube.com/watch?v=dImgZ_AH7uA"><FaLinkedin/></a></span>
-                <span><a href="https://www.youtube.com/watch?v=dImgZ_AH7uA"><IoMdMail/></a></span>
-                <span><a href="https://www.youtube.com/watch?v=dImgZ_AH7uA"><FaGithub/></a></span>
+                <span><a href="https://www.youtube.com/watch?v=dImgZ_AH7uA"><FaLinkedin /></a></span>
+                <span><a href="https://www.youtube.com/watch?v=dImgZ_AH7uA"><IoMdMail /></a></span>
+                <span><a href="https://www.youtube.com/watch?v=dImgZ_AH7uA"><FaGithub /></a></span>
               </div>
             </div>
           </div>
@@ -80,6 +87,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <Test />
     </>
   );
 };
